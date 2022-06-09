@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Font awesome link -->
-    <script src="https://kit.fontawesome.com/cdd758eea1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b8caedd5a6.js" crossorigin="anonymous"></script>
+
+    <!-- Mail smtp link -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- Favicon add here -->
     <link rel="shortcut icon" href="/image/logo.PNG" type="image/x-icon">
@@ -26,11 +29,11 @@
         ------------------------------>
         <nav class="container navbar navbar-expand-lg navbar-light mt-3">
             <div class="container-fluid">
-                <a class="navbar-brand lh-1 d-flex align-items-center" href="#">
+                <a class="navbar-brand lh-1 d-flex align-items-center" href="">
                     <img height="45px" src="image/logo.PNG" alt="">
                     <div class="ms-2">
                         <span class="fs-3">Abdullah Al Noman</span> <br>
-                        <span class="fs-6">Junior Full Stack Developer</span>
+                        <span class="fs-6">Jr. Web Developer</span>
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -75,9 +78,10 @@
                 agency called M3 Digital.
                 I'm also a
                 final year computer science student at QUT in Brisbane.</p>
-            <a href="" class="btn btn-primary p-2"><i class="fas fa-code"></i>
+            <a href="#projects" class="btn btn-primary p-2"><i class="fas fa-code"></i>
                 Projects</a>
-            <a href="" class="btn btn-outline-primary px-3 py-2"><i class="fab fa-github"></i>
+            <a target="_blank" href="https://github.com/noman081" class="btn btn-outline-primary px-3 py-2"><i
+                    class="fab fa-github text-black"></i>
                 Github</a>
         </section>
     </header>
@@ -88,45 +92,98 @@
         ------------------------------------->
         <!-- goto-top button -->
         <div class="d-flex justify-content-end me-4">
-            <a href="#top-bar" class="goto-top"><i class="fa fa-chevron-up"></i></a>
+            <a href="#top-bar" class="goto-top">↑</a>
         </div>
         <!-- goto-top button ends -->
         <section id="projects" class="container my-5">
             <h1 class="text-center my-5">My <span class="text-primary">Projects</span></h1>
             <div class="">
-                <div class="row row-cols-lg-2 row-cols-1 row-cols-sm-1 g-3 d-flex align-items-center ">
+                <!-- project1 -->
+                <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center">
                     <div class="col">
-                        <img class="img-fluid" src="image/my-project1.png" alt="">
+                        <img class="img-fluid" src="image/project1.png" alt="">
                     </div>
                     <div class="col">
-                        <h3>Online Medical Consultation</h3>
-                        <p><span class="text-secondary fw-bold">Made With:</span> Python, HTML 5, CSS 3, MySQL</p>
-                        <p>This project is used to manage the functionality and events in the healthcare center. It
-                            offers
-                            modules for new and existing doctors, maintaining patient records, appointments, Etc. It is
-                            an
-                            integrated software application offering end-to-end web-based services to streamline HMS. It
-                            includes inbuilt features building up a successful healthcare center</p>
-                        <a href="" class="btn btn-outline-primary px-3 py-2"><i class="fab fa-github"></i>
-                            Code</a>
+                        <h3>Advance Auto Parts</h3>
+                        <p><span class="text-secondary fw-bold">Technology used:</span> ReactJS, React Router,
+                            Tailwind
+                            CSS, Daisy UI, Node.Js, Express.Js, MongoDB,
+                            Firebase, React Stripe, React Form, React Query, JWT</p>
+                        <ul>
+                            <li>Users can order any type of parts as he wants, but the user must have logged in.
+                            </li>
+                            <li>To ensure orders user must pay for his orders and the user can also cancel orders
+                                only
+                                if
+                                he is not paid for the orders. In the dashboard, they can see their order list and
+                                status.</li>
+                            <li>On the admin side, an admin can confirm, ship, and cancel orders. But once payment
+                                is
+                                done he can cancel the order.</li>
+                            <li>Admin can add new products, delete products, manage users etc.</li>
+                        </ul>
+                        <a target="_blank" href="https://advance-autoparts.web.app/"
+                            class="btn btn-outline-primary px-3 py-2">
+                            Live-site
+                        </a>
+                        <a target="_blank" href="https://github.com/noman081/advance-auto-parts-client"
+                            class="btn btn-outline-primary px-3 py-2"><i class="fab fa-github text-black"></i> Client
+                            Side</a>
+                        <a target="_blank" href="https://github.com/noman081/advance-auto-parts-server"
+                            class="btn btn-outline-primary px-3 py-2"><i class="fab fa-github text-black"></i> Server
+                            Side</a>
                     </div>
+                </div>
 
+                <!-- project2 -->
+                <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center mt-3">
                     <div class="col">
-                        <img class="img-fluid" src="image/my-project2.png" alt="">
+                        <img class="img-fluid rounded-3" src="image/project2.png" alt="">
                     </div>
                     <div class="col">
-                        <h3>Messenger</h3>
-                        <p><span class="text-secondary fw-bold">Made With:</span> Python, Socket Programming</p>
-                        <p>Group texts can be a lot of fun, especially when you start sharing links, GIFs, and other fun
-                            media.
-                            With Messenger you don’t have to worry about having a cellphone data plan. As long as you
-                            have WiFi,
-                            you’ll be able to use it. 
-                            The best thing about Messenger is that it works just the same on both your smartphone and
-                            computer.
-                            You can login via the app or on browser and have the exact same experience.</p>
-                        <a href="" class="btn btn-outline-primary px-3 py-2"><i class="fab fa-github"></i>
-                            Code</a>
+                        <h3>CarMax Warehouse</h3>
+                        <p><span class="text-secondary fw-bold">Technology used:</span> ReactJS, React Router, React
+                            Bootstrap, Node.Js, Express.Js, MongoDB, Firebase, JWT</p>
+                        <ul>
+                            <li>Users can explore the different type of products and can deliver or add them.
+                            </li>
+                            <li>To deliver or add a product user must have signed in.</li>
+                            <li>User can also delete a product when the product is out of stock</li>
+                        </ul>
+                        <a target="_blank" href="https://carmax-warehouse.web.app/"
+                            class="btn btn-outline-primary px-3 py-2">
+                            Live-site
+                        </a>
+                        <a target="_blank" href="https://github.com/noman081/carmax-warehouse-client"
+                            class="btn btn-outline-primary px-3 py-2"><i class="fab fa-github text-black"></i> Client
+                            Side</a>
+                        <a target="_blank" href="https://github.com/noman081/carmax-warehouse-server"
+                            class="btn btn-outline-primary px-3 py-2"><i class="fab fa-github text-black"></i> Server
+                            Side</a>
+                    </div>
+                </div>
+
+                <!-- project3 -->
+                <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center mt-3">
+                    <div class="col">
+                        <img class="img-fluid" src="image/project3.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h3>Dream Photography</h3>
+                        <p><span class="text-secondary fw-bold">Technology used:</span> ReactJS, React Router, React
+                            Bootstrap, Firebase, React Toastify</p>
+                        <ul>
+                            <li>It's a website for an independent working person.</li>
+                            <li>Users can book a service. For booking a service user must have logged in.</li>
+                            <li>During booking user has to give some details information to contact with them.</li>
+                        </ul>
+                        <a target="_blank" href="https://dream-photography.web.app/"
+                            class="btn btn-outline-primary px-3 py-2">
+                            Live-site
+                        </a>
+                        <a target="_blank" href="https://github.com/noman081/dream-photography"
+                            class="btn btn-outline-primary px-3 py-2"><i class="fab fa-github text-black"></i> Client
+                            Side</a>
                     </div>
                 </div>
             </div>
@@ -139,79 +196,76 @@
         <section id="skills" class="container my-5 text-center">
             <h1 class="my-5">My <span class="text-primary">Skills</span></h1>
             <div class="row row-cols-3 row-cols-lg-6">
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/c.png" alt="">
                         <p>C Programming</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/c++.png" alt="">
                         <p>C++</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/java.png" alt="">
                         <p>Java</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/python.png" alt="">
                         <p>Python</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="skills-hover">
-                        <img width="90px" src="icon/php.png" alt="">
-                        <p>PHP</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skills-hover">
-                        <img width="90px" src="icon/php.png" alt="">
-                        <p>PHP</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-cols-3 row-cols-lg-6 my-5">
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/html.png" alt="">
                         <p>HTML</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/css.png" alt="">
                         <p>CSS</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/js.png" alt="">
                         <p>Javascript</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
+                    <div class="skills-hover">
+                        <img width="90px" src="icon/react.png" alt="">
+                        <p>ReactJS</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="skills-hover">
+                        <img width="90px" src="icon/node.png" alt="">
+                        <p>Node.JS</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/sql.png" alt="">
                         <p>My SQL</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
                         <img width="90px" src="icon/git.png" alt="">
                         <p>Git</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="skills-hover">
-                        <img width="90px" src="icon/linux.png" alt="">
-                        <p>Linux</p>
+                        <img width="90px" src="icon/mongo.png" alt="">
+                        <p>MongoDB</p>
                     </div>
                 </div>
 
@@ -274,13 +328,13 @@
             <h3 class="text-center">Contact <span class="text-primary mb-4">Me</span></h3>
             <div class="row row-cols-lg-3 row-cols-1 row-cols-sm-1 my-5">
                 <div class="col shadow p-3 mb-5 bg-body rounded text-center contact-me m-auto">
-                    <i class="fas fa-envelope contact-icon"></i>
+                    <i class="fas fa-envelope contact-icon text-black"></i>
                     <h5 class="mt-3">Email</h5>
                     <a class="text-decoration-none" href="mailto: abdullahalnoman642@gmail.com">Abdullah
                         Al Noman</a>
                 </div>
                 <div class="col shadow p-3 mb-5 bg-body rounded text-center contact-me m-auto">
-                    <i class="fab fa-github contact-icon"></i>
+                    <i class="fab fa-github contact-icon text-black"></i>
                     <h5 class="mt-3">Github</h5>
                     <a target="_blank" class="text-decoration-none" href="https://github.com/noman081">noman081</a>
                 </div>
@@ -301,27 +355,33 @@
         <section class="container">
             <div class="shadow p-5 mb-5 bg-body rounded">
                 <h3 class="text-center mb-5">Send <span class="text-primary">Email</span></h3>
-                <div class="form-floating mb-3 w-75 mx-auto">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Name</label>
-                </div>
-                <div class="form-floating mb-3 w-75 mx-auto">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3 w-75 mx-auto">
-                    <input type="text" class="form-control h-75" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Send Message</label>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button class="btn btn-primary bg-gradient">Submit</button>
+
+                <div>
+                    <div class="form-floating mb-3 w-75 mx-auto">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mb-3 w-75 mx-auto">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3 w-75 mx-auto">
+                        <input type="text" class="form-control h-75" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Send Message</label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button onclick="sendMail()" class="btn btn-primary bg-gradient">Submit</button>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Send-email-section ends here  -->
     </main>
-    <footer class="bg-dark text-white p-4 d-flex justify-content-between align-items-center">
+    <footer class="bg-dark text-white p-2 d-flex justify-content-between align-items-center">
         <img width="200px" height="70px" src="image/logo.PNG" alt="">
+        <div>
+            <p>Copyright &copy; Abdullah Al Noman, 2022</p>
+        </div>
         <div class="d-flex justify-content-around">
             <div class="me-4">
                 <a target="_blank" class="text-decoration-none" href="https://github.com/noman081"><i
@@ -342,6 +402,7 @@
 
     <!-- Javascript Link -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
