@@ -5,6 +5,16 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+#about {
+    min-height: 100%;
+    height: 100%;
+    background-image: url(/image/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
 .goto-top {
     position: fixed;
     margin-bottom: -100px;
@@ -26,6 +36,12 @@ body {
 #projects img:hover {
     transform: scale(1.05);
     transition: 0.4s ease-in transform;
+}
+
+#skills,
+#contact {
+    background-image: linear-gradient(#474d5d, #4b546f);
+    color: white;
 }
 
 .skills-hover:hover {
